@@ -1,5 +1,26 @@
 ﻿namespace lektion14;
 
+class Program {
+    static void Main(string[] args) {
+        MyList<string> countries = new MyList<string>();
+
+        countries.Add("Sweden");
+        countries.Add("Norway");
+        countries.Add("Finland");
+        countries.Add("Denmark");
+        countries.Add("Iceland");
+
+        countries.RemoveAt(1);
+        countries.RemoveAt(2);
+        countries.Remove("Finland");
+
+        for (int i = 0; i < countries.Size(); i++) {
+            Console.WriteLine(countries.Get(i));
+        }
+    }
+}
+
+/*
 public interface ISomeInterface {
     void DoSomething();
 }
@@ -83,4 +104,4 @@ public class MyList<T> where T : ISomeInterface {
     }
 
     public void Remove() {}
-}
+}*/

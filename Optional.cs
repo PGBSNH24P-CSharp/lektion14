@@ -1,4 +1,4 @@
-public class Optional<T> {
+/*public class Optional<T> {
     T value;
 
     public static Optional<T> Of(T value) {
@@ -24,4 +24,4 @@ public class Optional<T> {
     public T Get() {
         return value;
     }
-}
+}*/
